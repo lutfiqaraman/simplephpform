@@ -55,30 +55,34 @@
     <label for="username">User Name:</label>
     <input type="text" name="username" id="username"><br>
 
-    Password: <input type="password" name="password"><br>
+    <label for="password">Password: </label>
+    <input type="password" name="password" id="password"><br>
+
     Gender:
         <input type="radio" name="gender" value="f"> Female
         <input type="radio" name="gender" value="m"> Male
         <input type="radio" name="gender" value="o"> Other <br>
 
-    Favorite Color:
-    <select name="color" id="">
+
+    <label for="color">Favorite Color:</label>
+    <select name="color" id="color">
         <option value="-1">Please select</option>
         <option value="1">Red</option>
         <option value="2">Blue</option>
         <option value="3">Green</option>
     </select><br>
 
-    Languages Spoken:
-    <select name="languages[]" multiple size="3">
+
+    <label for="languages">Languages Spoken:</label>
+    <select name="languages[]" multiple size="3" id="languages">
         <option value="1">English</option>
         <option value="2">French</option>
         <option value="3">Italian</option>
         <option value="4">Russian</option>
     </select><br>
 
-    Comments:
-    <textarea name="comments"></textarea> <br>
+    <label for="comments">Comments:</label>
+    <textarea name="comments" id="comments"></textarea> <br>
 
     <input type="checkbox" name="tc" value="ok">
     I accept the T&amp;C
