@@ -38,7 +38,7 @@
             $tc = $_POST['tc'];
         }
 
-        printf('User name: %s<br>Password: %s<br>Gender: %s<br>Color: %s<br>Language(s): %s<br>Comments: %s<br>T&smp;C: %s',
+        printf('User name: %s<br>Password: %s<br>Gender: %s<br>Color: %s<br>Language(s): %s<br>Comments: %s<br>T&amp;C: %s',
             htmlspecialchars($username, ENT_QUOTES),
             htmlspecialchars($password, ENT_QUOTES),
             htmlspecialchars($gender, ENT_QUOTES),
@@ -51,7 +51,10 @@
 ?>
 
 <form action="" method="post">
-    User name: <input type="text" name="username"><br>
+
+    <label for="username">User Name:</label>
+    <input type="text" name="username" id="username"><br>
+
     Password: <input type="password" name="password"><br>
     Gender:
         <input type="radio" name="gender" value="f"> Female
